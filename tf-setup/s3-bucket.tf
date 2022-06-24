@@ -14,7 +14,7 @@ resource "aws_s3_bucket" "terraform_state" {
 
   // This is only here so we can destroy the bucket as part of automated tests. You should not copy this for production
   // usage
-  force_destroy = true
+  # force_destroy = true
 
   # Enable versioning so we can see the full revision history of our
   # state files

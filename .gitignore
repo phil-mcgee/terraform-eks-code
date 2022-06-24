@@ -4,6 +4,8 @@
 # .tfstate files
 *.tfstate
 *.tfstate.*
+!tf-setup/terraform.tfstate*
+
 
 # Crash log files
 crash.log
@@ -28,18 +30,22 @@ override.tf.json
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
 *tfplan*
-terraform*
+# pm terraform*
 kubectl*
 **/old/*
 **/aws/*
 **/sw/*
 jq
-**/backend-*.tf
-backend-*.tf
-**/remote-*.tf
+# pm **/backend-*.tf
+# pm backend-*.tf
+# pm **/remote-*.tf
 **/*.old
-remote-*.tf
-**/tf-setup/generated/*
+# pm remote-*.tf
+# pm **/tf-setup/generated/*
 **/net-v2/*
 **/notused/*
+
+get-pip.py
+session-manager-plugin.rpm
+**/.terraform.lock.hcl
 

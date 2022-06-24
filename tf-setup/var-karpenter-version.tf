@@ -10,7 +10,7 @@ variable "karpenter_version" {
 
 variable "bottlerocket_k8s_version" {
   description = "Kubernetes version for Bottlerocket AMI"
-  default     = "1.21"
+  default     = "1.22"
   type        = string
 }
 

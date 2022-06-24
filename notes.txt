@@ -1,0 +1,11 @@
+Notes for work following
+https://tf-eks-workshop.workshop.aws/
+
+Installing an EKS cluster using Terraform 
+
+The
+    setup-tools.sh needs to be run on the system
+    tf-setup needs to be run manually one time
+        it generates */backend-*.tf files in various other directories
+        subsequently these generated files will be managed by git
+        
