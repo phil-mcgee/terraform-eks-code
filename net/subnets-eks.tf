@@ -74,7 +74,7 @@ output "sub-isol3" {
 resource "aws_subnet" "subnet-p1" {
   assign_ipv6_address_on_creation = false
   availability_zone               = data.aws_availability_zones.az.names[0]
-  cidr_block                      = "10.0.1.0/24"
+  cidr_block                      = "10.9.1.0/24"
   map_public_ip_on_launch         = false
   tags = {
     "Name"                                      = "Private1"
@@ -96,7 +96,7 @@ output "sub-priv1" {
 resource "aws_subnet" "subnet-p2" {
   assign_ipv6_address_on_creation = false
   availability_zone               = data.aws_availability_zones.az.names[1]
-  cidr_block                      = "10.0.2.0/24"
+  cidr_block                      = "10.9.2.0/24"
   map_public_ip_on_launch         = false
   tags = {
     "Name"                                      = "Private2"
@@ -117,7 +117,7 @@ output "sub-priv2" {
 resource "aws_subnet" "subnet-p3" {
   assign_ipv6_address_on_creation = false
   availability_zone               = data.aws_availability_zones.az.names[2]
-  cidr_block                      = "10.0.3.0/24"
+  cidr_block                      = "10.9.3.0/24"
   map_public_ip_on_launch         = false
   tags = {
     "Name"                                      = "Private3"

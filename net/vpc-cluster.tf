@@ -2,7 +2,7 @@
 # aws_vpc.vpc-vpc-:
 resource "aws_vpc" "cluster" {
   assign_generated_ipv6_cidr_block = false
-  cidr_block                       = "10.0.0.0/22"
+  cidr_block                       = "10.9.0.0/22"
   enable_classiclink               = false
   enable_classiclink_dns_support   = false
   enable_dns_hostnames             = true
